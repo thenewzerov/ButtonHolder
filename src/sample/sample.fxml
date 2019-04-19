@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <TextField fx:id="textDelay" text="500" GridPane.columnIndex="1" />
+        <CheckBox fx:id="shift" mnemonicParsing="false" prefHeight="17.0" prefWidth="89.0" text="Shift" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <CheckBox fx:id="ctrl" mnemonicParsing="false" text="Ctrl" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <CheckBox fx:id="leftclick" mnemonicParsing="false" text="Left Click" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <CheckBox fx:id="rightclick" mnemonicParsing="false" text="Right Click" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <CheckBox fx:id="recordButton" mnemonicParsing="false" text="E" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Button mnemonicParsing="false" onAction="#OnStartClicked" text="Start" GridPane.rowIndex="6" />
+        <Button mnemonicParsing="false" onAction="#onStopClicked" text="Stop" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <Button mnemonicParsing="false" onAction="#OnRecordClicked" text="Record Macro" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label text="Delay" />
+    </children>
+</GridPane>
